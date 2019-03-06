@@ -1,0 +1,227 @@
+history
+    1  git --version
+    2  git config --global
+    3  git config --global user.email "blablarahul@gmail.com"
+    4  git config --global user.name "ranjith"
+    5  git clear
+    6  git clean
+    7  git --help
+    8  cat /c/Users/Abridge Solutions/.gitconfig
+    9  cat /c/Users/Abridge Solutions/ .gitconfig
+   10  clear
+   11  cat /c/Users/Abridge Solutions/ .gitconfig
+   12  ls
+   13  cd tr*
+   14  cd training
+   15  mkdir wellsfargo
+   16  cd wellsfargo
+   17  mkdir batch-1
+   18  cd batch-1
+   19  mkdir repo
+   20  ls -la
+   21  git init
+   22  ls -la
+   23  cd repo
+   24  git init
+   25  ls -la
+   26  git --help
+   27  git --help
+   28  git status
+   29  vi .gitignore
+   30  git status
+   31  git add .gitignore
+   32  git status
+   33  git rm --cached
+   34  git status
+   35  git rm --cached .gitignore
+   36  git status
+   37  git add .gitignore
+   38  git status
+   39  git rm --cached .gitignore
+   40  vi .gitignore
+   41  git add .gitignore
+   42  git status
+   43  vi .gitignore
+   44  git status
+   45  git commit -m "adding .gitignore"
+   46  git status
+   47  touch test-report.html
+   48  git status
+   49  touch file1
+   50  git status
+   51  git commit -am "adding file directly from LWD to LR"
+   52  git status
+   53  git commit -am "adding file directly from LWD to LR" "file2.txt"
+   54  git status
+   55  git commit -am "adding file directly from LWD to LR" file2.txt
+   56  git commit -am "adding file directly from LWD to LR" ./file2.txt
+   57  git status
+   58  git commit -am "adding file directly from LWD to LR" ~/file2.txt
+   59  vi .gitignore
+   60  git status
+   61  git checkout .gitignore
+   62  git stash
+   63  git status
+   64  git checkout .gitignore
+   65  vi .gitignore
+   66  git checkout .gitignore
+   67  git status
+   68  git stash
+   69  git checkout -- .gitignore
+   70  git status
+   71  git stash
+   72  vi .gitignore
+   73  git checkout -- .gitignore
+   74  git status
+   75  git status
+   76  git checkout -- .gitignore
+   77  vi .gitignore
+   78  git status
+   79  git stash
+   80  git status
+   81  git log
+   82  git log -p
+   83  q
+   84  git history
+   85  history
+   86  git branch
+   87  git branch localbranch
+   88  git branch local-branch
+   89  git branch
+   90  git log
+   91  git checkout local-branch
+   92  git log
+   93  git add 'newfile'
+   94  git add newfile.text
+   95  touch newfile.txt
+   96  git status
+   97  git checkout master
+   98  git status
+   99  git checkout master
+  100  git status
+  101  touch newfile11.txt
+  102  git status
+  103  git checkout master
+  104  git checkout local-branch
+  105  git status
+  106  git checkout master
+  107  git log
+  108  git status
+  109  git status
+  110  git checkout local-branch
+  111  git status
+  112  ls -la
+  113  git checkout -b new-branch
+  114  ls -la
+  115  ls -la
+  116  git add "fileNew" local-branch
+  117  git add fileNew local-branch
+  118  git add local-branch
+  119  git add newfile local-branch
+  120  git add -a newfile local-branch
+  121  echo >> "new file" test.text
+  122  git status
+  123  echo "test data entered" >> file1.text
+  124  git status
+  125  git checkout master
+  126  echo "test data entered" >> Newfile.text
+  127  git checkout new-branch
+  128  git status
+  129  git branch branch1
+  130  git branch branch2
+  131  vi file1.text
+  132  git commit -am
+  133  git checkout branch1
+  134  vi file1.txt
+  135  git commit -am
+  136  git commit -am file1.txt
+  137  git commit -am "checked"
+  138  git checkout master
+  139  git branch branch2
+  140  git branch branch2
+  141  git branch branch-2
+  142  git checkout branch-2
+  143  git branch newbranch1
+  144  git checkout newbranch1
+  145  ls -l1
+  146*
+  147  vi file1.txt
+  148  git commit -am "checked new file"
+  149  git commit -am
+  150  git commit -am "checked new file"
+  151  ls -la
+  152  vi .gitignore
+  153  ls -la
+  154  commit -am "1. adding cahnmegs in branch1"
+  155  git commit -am "1. adding cahnmegs in branch1"
+  156  git checkout master
+  157  git branch newbranch2
+  158  git checkout newbranch2
+  159  touch new-file
+  160  git add new-file
+  161  git commit -m "2. adding new file brabch2"
+  162  git checkout master
+  163  vi .gitignore
+  164  git commit -am "2. adding chenge in master"
+  165  history
+  166  git merge newbranch2
+  167  git log
+  168  git checkout newbranch2
+  169  git merge master
+  170*
+  171  git log
+  172  git checkout master
+  173  git merge newbranch1
+  174  cd .git
+  175  ls -la
+  176  cd..
+  177  cd.
+  178  cd ..
+  179  git commit -am "resolving confilicts"
+  180  cd .git
+  181  ls -la
+  182  cd ..
+  183  cat .gitignore
+  184  git checkout newbranch1
+  185  git merge master
+  186  cat .gitignore
+  187  git branch -d branch-2
+  188  git branch -d new-branch
+  189  ls -la
+  190  git branch -d branch1
+  191  git branch -d branch2
+  192  git branch -d localbranch
+  193  git checkout local-branch
+  194  ls -la
+  195  git checkout newbranch1
+  196  nano .gitignore
+  197  git merge master
+  198  git checkout master
+  199  git merge newbranch1
+  200  git tag
+  201  git tag Ver-1.0
+  202  git tag
+  203  git checkout Ver-1.0
+  204  ls -la
+  205  git status
+  206  git commit -am "tagging demo"
+  207  git log
+  208  echo "tagging demo -" >> new-file
+  209  git log
+  210  git status
+  211  git branch newTagCreatedBranch
+  212  git checkout master
+  213  merge newTagCreatedBranch
+  214  git merge newTagCreatedBranch
+  215  git checkout newTagCreatedBranch
+  216  git merge master
+  217  git checkout newTagCreatedBranch
+  218  git checkout branch
+  219  git checkout master
+  220  git branch -d newTagCreatedBranch
+  221  git checkout local-branch
+  222  git commit -am "cheanges checked"
+  223  git checkout local-branch
+  224  git show
+  225  git history
+  226  history

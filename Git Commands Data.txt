@@ -1,0 +1,573 @@
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~
+$ cat /c/Users/Abridge Solutions/ .gitconfig
+cat: /c/Users/Abridge: No such file or directory
+cat: Solutions/: No such file or directory
+[user]
+        email = blablarahul@gmail.com
+        name = ranjith
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IBM/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{8ebe95f7-3dcb-11e8-a9d9-7cfe90913f50}.TM.blf
+ NTUSER.DAT{8ebe95f7-3dcb-11e8-a9d9-7cfe90913f50}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{8ebe95f7-3dcb-11e8-a9d9-7cfe90913f50}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Training/
+ Videos/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~
+$ cd tr*
+bash: cd: tr*: No such file or directory
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~
+$ cd training
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training
+$ mkdir wellsfargo
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training
+$ cd wellsfargo
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo
+$ mkdir batch-1
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo
+$ cd batch-1
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1
+$ mkdir repo
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1
+$ ls -la
+total 0
+drwxr-xr-x 1 Abridge Solutions 197121 0 Mar  5 11:47 ./
+drwxr-xr-x 1 Abridge Solutions 197121 0 Mar  5 11:46 ../
+drwxr-xr-x 1 Abridge Solutions 197121 0 Mar  5 11:47 repo/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1
+$ git init
+Initialized empty Git repository in C:/Users/Abridge Solutions/Training/wellsfargo/batch-1/.git/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1 (master)
+$ ls -la
+total 4
+drwxr-xr-x 1 Abridge Solutions 197121 0 Mar  5 11:48 ./
+drwxr-xr-x 1 Abridge Solutions 197121 0 Mar  5 11:46 ../
+drwxr-xr-x 1 Abridge Solutions 197121 0 Mar  5 11:48 .git/
+drwxr-xr-x 1 Abridge Solutions 197121 0 Mar  5 11:47 repo/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1 (master)
+$ cd repo
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git init
+Initialized empty Git repository in C:/Users/Abridge Solutions/Training/wellsfargo/batch-1/repo/.git/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ ls -la
+total 4
+drwxr-xr-x 1 Abridge Solutions 197121 0 Mar  5 11:52 ./
+drwxr-xr-x 1 Abridge Solutions 197121 0 Mar  5 11:48 ../
+drwxr-xr-x 1 Abridge Solutions 197121 0 Mar  5 11:52 .git/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ vi .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git add .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git rm --cached
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git rm --cached .gitignore
+rm '.gitignore'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git add .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git rm --cached .gitignore
+rm '.gitignore'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ vi .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git add .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ vi .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git commit -m "adding .gitignore"
+[master (root-commit) c28c573] adding .gitignore
+ 1 file changed, 6 insertions(+)
+ create mode 100644 .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ touch test-report.html
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ touch file1
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git commit -am "adding file directly from LWD to LR"
+[master 1924275] adding file directly from LWD to LR
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git commit -am "adding file directly from LWD to LR" "file2.txt"
+fatal: Paths with -a does not make sense.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git commit -am "adding file directly from LWD to LR" file2.txt
+fatal: Paths with -a does not make sense.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git commit -am "adding file directly from LWD to LR" ./file2.txt
+fatal: Paths with -a does not make sense.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git commit -am "adding file directly from LWD to LR" ~/file2.txt
+fatal: Paths with -a does not make sense.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ vi .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git checkout .gitignore
+Updated 1 path from the index
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git stash
+No local changes to save
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git checkout .gitignore
+Updated 0 paths from the index
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ vi .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git checkout .gitignore
+Updated 1 path from the index
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git stash
+No local changes to save
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git checkout -- .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git stash
+No local changes to save
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ vi .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git checkout -- .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git checkout -- .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ vi .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git stash
+Saved working directory and index state WIP on master: 1924275 adding file directly from LWD to LR
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/training/wellsfargo/batch-1/repo (master)
+$

@@ -1,0 +1,85 @@
+ git --version
+    2  git config --global
+    3  git config --global user.email "blablarahul@gmail.com"
+    4  git config --global user.name "ranjith"
+    5  git clear
+    6  git clean
+    7  git --help
+    8  cat /c/Users/Abridge Solutions/.gitconfig
+    9  cat /c/Users/Abridge Solutions/ .gitconfig
+   10  clear
+   11  cat /c/Users/Abridge Solutions/ .gitconfig
+   12  ls
+   13  cd tr*
+   14  cd training
+   15  mkdir wellsfargo
+   16  cd wellsfargo
+   17  mkdir batch-1
+   18  cd batch-1
+   19  mkdir repo
+   20  ls -la
+   21  git init
+   22  ls -la
+   23  cd repo
+   24  git init
+   25  ls -la
+   26  git --help
+   27  git --help
+   28  git status
+   29  vi .gitignore
+   30  git status
+   31  git add .gitignore
+   32  git status
+   33  git rm --cached
+   34  git status
+   35  git rm --cached .gitignore
+   36  git status
+   37  git add .gitignore
+   38  git status
+   39  git rm --cached .gitignore
+   40  vi .gitignore
+   41  git add .gitignore
+   42  git status
+   43  vi .gitignore
+   44  git status
+   45  git commit -m "adding .gitignore"
+   46  git status
+   47  touch test-report.html
+   48  git status
+   49  touch file1
+   50  git status
+   51  git commit -am "adding file directly from LWD to LR"
+   52  git status
+   53  git commit -am "adding file directly from LWD to LR" "file2.txt"
+   54  git status
+   55  git commit -am "adding file directly from LWD to LR" file2.txt
+   56  git commit -am "adding file directly from LWD to LR" ./file2.txt
+   57  git status
+   58  git commit -am "adding file directly from LWD to LR" ~/file2.txt
+   59  vi .gitignore
+   60  git status
+   61  git checkout .gitignore
+   62  git stash
+   63  git status
+   64  git checkout .gitignore
+   65  vi .gitignore
+   66  git checkout .gitignore
+   67  git status
+   68  git stash
+   69  git checkout -- .gitignore
+   70  git status
+   71  git stash
+   72  vi .gitignore
+   73  git checkout -- .gitignore
+   74  git status
+   75  git status
+   76  git checkout -- .gitignore
+   77  vi .gitignore
+   78  git status
+   79  git stash
+   80  git status
+   81  git log
+   82  git log -p
+   83  q
+   84  git history
+   85  history

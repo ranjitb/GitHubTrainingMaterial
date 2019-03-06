@@ -1,0 +1,1337 @@
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~
+$ git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~
+$ ~
+bash: /c/Users/Abridge Solutions: Is a directory
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~
+$ git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~
+$ history
+    1  git --version
+    2  git config --global
+    3  git config --global user.email "blablarahul@gmail.com"
+    4  git config --global user.name "ranjith"
+    5  git clear
+    6  git clean
+    7  git --help
+    8  cat /c/Users/Abridge Solutions/.gitconfig
+    9  cat /c/Users/Abridge Solutions/ .gitconfig
+   10  clear
+   11  cat /c/Users/Abridge Solutions/ .gitconfig
+   12  ls
+   13  cd tr*
+   14  cd training
+   15  mkdir wellsfargo
+   16  cd wellsfargo
+   17  mkdir batch-1
+   18  cd batch-1
+   19  mkdir repo
+   20  ls -la
+   21  git init
+   22  ls -la
+   23  cd repo
+   24  git init
+   25  ls -la
+   26  git --help
+   27  git --help
+   28  git status
+   29  vi .gitignore
+   30  git status
+   31  git add .gitignore
+   32  git status
+   33  git rm --cached
+   34  git status
+   35  git rm --cached .gitignore
+   36  git status
+   37  git add .gitignore
+   38  git status
+   39  git rm --cached .gitignore
+   40  vi .gitignore
+   41  git add .gitignore
+   42  git status
+   43  vi .gitignore
+   44  git status
+   45  git commit -m "adding .gitignore"
+   46  git status
+   47  touch test-report.html
+   48  git status
+   49  touch file1
+   50  git status
+   51  git commit -am "adding file directly from LWD to LR"
+   52  git status
+   53  git commit -am "adding file directly from LWD to LR" "file2.txt"
+   54  git status
+   55  git commit -am "adding file directly from LWD to LR" file2.txt
+   56  git commit -am "adding file directly from LWD to LR" ./file2.txt
+   57  git status
+   58  git commit -am "adding file directly from LWD to LR" ~/file2.txt
+   59  vi .gitignore
+   60  git status
+   61  git checkout .gitignore
+   62  git stash
+   63  git status
+   64  git checkout .gitignore
+   65  vi .gitignore
+   66  git checkout .gitignore
+   67  git status
+   68  git stash
+   69  git checkout -- .gitignore
+   70  git status
+   71  git stash
+   72  vi .gitignore
+   73  git checkout -- .gitignore
+   74  git status
+   75  git status
+   76  git checkout -- .gitignore
+   77  vi .gitignore
+   78  git status
+   79  git stash
+   80  git status
+   81  git log
+   82  git log -p
+   83  q
+   84  git history
+   85  history
+   86  git branch
+   87  git branch localbranch
+   88  git branch local-branch
+   89  git branch
+   90  git log
+   91  git checkout local-branch
+   92  git log
+   93  git add 'newfile'
+   94  git add newfile.text
+   95  touch newfile.txt
+   96  git status
+   97  git checkout master
+   98  git status
+   99  git checkout master
+  100  git status
+  101  touch newfile11.txt
+  102  git status
+  103  git checkout master
+  104  git checkout local-branch
+  105  git status
+  106  git checkout master
+  107  git log
+  108  git status
+  109  git status
+  110  git checkout local-branch
+  111  git status
+  112  ls -la
+  113  git checkout -b new-branch
+  114  ls -la
+  115  ls -la
+  116  git add "fileNew" local-branch
+  117  git add fileNew local-branch
+  118  git add local-branch
+  119  git add newfile local-branch
+  120  git add -a newfile local-branch
+  121  echo >> "new file" test.text
+  122  git status
+  123  echo "test data entered" >> file1.text
+  124  git status
+  125  git checkout master
+  126  echo "test data entered" >> Newfile.text
+  127  git checkout new-branch
+  128  git status
+  129  git branch branch1
+  130  git branch branch2
+  131  vi file1.text
+  132  git commit -am
+  133  git checkout branch1
+  134  vi file1.txt
+  135  git commit -am
+  136  git commit -am file1.txt
+  137  git commit -am "checked"
+  138  git checkout master
+  139  git branch branch2
+  140  git branch branch2
+  141  git branch branch-2
+  142  git checkout branch-2
+  143  git branch newbranch1
+  144  git checkout newbranch1
+  145  ls -l1
+  146  vi file1.txt
+  147  git commit -am "checked new file"
+  148  git commit -am
+  149  git commit -am "checked new file"
+  150  ls -la
+  151  vi .gitignore
+  152  ls -la
+  153  commit -am "1. adding cahnmegs in branch1"
+  154  git commit -am "1. adding cahnmegs in branch1"
+  155  git checkout master
+  156  git branch newbranch2
+  157  git checkout newbranch2
+  158  touch new-file
+  159  git add new-file
+  160  git commit -m "2. adding new file brabch2"
+  161  git checkout master
+  162  vi .gitignore
+  163  git commit -am "2. adding chenge in master"
+  164  history
+  165  git merge newbranch2
+  166  git log
+  167  git checkout newbranch2
+  168  git merge master
+  169  git log
+  170  git checkout master
+  171  git merge newbranch1
+  172  cd .git
+  173  ls -la
+  174  cd..
+  175  cd.
+  176  cd ..
+  177  git commit -am "resolving confilicts"
+  178  cd .git
+  179  ls -la
+  180  cd ..
+  181  cat .gitignore
+  182  git checkout newbranch1
+  183  git merge master
+  184  cat .gitignore
+  185  git branch -d branch-2
+  186  git branch -d new-branch
+  187  ls -la
+  188  git branch -d branch1
+  189  git branch -d branch2
+  190  git branch -d localbranch
+  191  git checkout local-branch
+  192  ls -la
+  193  git checkout newbranch1
+  194  nano .gitignore
+  195  git merge master
+  196  git checkout master
+  197  git merge newbranch1
+  198  git tag
+  199  git tag Ver-1.0
+  200  git tag
+  201  git checkout Ver-1.0
+  202  ls -la
+  203  git status
+  204  git commit -am "tagging demo"
+  205  git log
+  206  echo "tagging demo -" >> new-file
+  207  git log
+  208  git status
+  209  git branch newTagCreatedBranch
+  210  git checkout master
+  211  merge newTagCreatedBranch
+  212  git merge newTagCreatedBranch
+  213  git checkout newTagCreatedBranch
+  214  git merge master
+  215  git checkout newTagCreatedBranch
+  216  git checkout branch
+  217  git checkout master
+  218  git branch -d newTagCreatedBranch
+  219  git checkout local-branch
+  220  git commit -am "cheanges checked"
+  221  git checkout local-branch
+  222  git show
+  223  git history
+  224  history
+  225  history
+  226  clear
+  227  git remote -v
+  228  ~
+  229  git remote -v
+  230  history
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~
+$ ^C
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~
+$ cd cat /c/Users/Abridge Solutions/
+bash: cd: too many arguments
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~
+$ cd tra*
+bash: cd: tra*: No such file or directory
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~
+$ cd Training/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training
+$ ls
+wellsfargo/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training
+$ cd wellsfargo/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo
+$ git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo
+$ cd batch-1/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ cd repo/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ git remote -v
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ git remote add origin https://github.com/ranjitb/NewRepository.git
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ git push origin master
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (23/23), 2.08 KiB | 79.00 KiB/s, done.
+Total 23 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/ranjitb/NewRepository.git
+ * [new branch]      master -> master
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ cd ..
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ cd ..ls ll
+bash: cd: too many arguments
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ ls ll
+ls: cannot access 'll': No such file or directory
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ ls li
+ls: cannot access 'li': No such file or directory
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ ls la
+ls: cannot access 'la': No such file or directory
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ ll
+total 4
+drwxr-xr-x 1 Abridge Solutions 197121 0 Mar  5 16:22 repo/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ git clone https://github.com/ranjitb/NewRepository.git
+Cloning into 'NewRepository'...
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 23 (delta 2), reused 23 (delta 2), pack-reused 0
+Unpacking objects: 100% (23/23), done.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ ll
+total 4
+drwxr-xr-x 1 Abridge Solutions 197121 0 Mar  6 10:04 NewRepository/
+drwxr-xr-x 1 Abridge Solutions 197121 0 Mar  5 16:22 repo/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ cd repo/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ git remove -v
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ git remote -v
+origin  https://github.com/ranjitb/NewRepository.git (fetch)
+origin  https://github.com/ranjitb/NewRepository.git (push)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ git branch
+* local-branch
+  master
+  newbranch1
+  newbranch2
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ git branch master
+fatal: A branch named 'master' already exists.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ git branch ^Cster
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ git checkout master
+Switched to branch 'master'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git remote -v
+origin  https://github.com/ranjitb/NewRepository.git (fetch)
+origin  https://github.com/ranjitb/NewRepository.git (push)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git branch
+  local-branch
+* master
+  newbranch1
+  newbranch2
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git branch -r
+  origin/master
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git push origin newbranch1
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'newbranch1' on GitHub by visiting:
+remote:      https://github.com/ranjitb/NewRepository/pull/new/newbranch1
+remote:
+To https://github.com/ranjitb/NewRepository.git
+ * [new branch]      newbranch1 -> newbranch1
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git push origin newbranch2
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'newbranch2' on GitHub by visiting:
+remote:      https://github.com/ranjitb/NewRepository/pull/new/newbranch2
+remote:
+To https://github.com/ranjitb/NewRepository.git
+ * [new branch]      newbranch2 -> newbranch2
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git remote v
+error: Unknown subcommand: v
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git remote -v
+origin  https://github.com/ranjitb/NewRepository.git (fetch)
+origin  https://github.com/ranjitb/NewRepository.git (push)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git fetch origin
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git branch -r
+  origin/master
+  origin/newbranch1
+  origin/newbranch2
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git remote -v
+origin  https://github.com/ranjitb/NewRepository.git (fetch)
+origin  https://github.com/ranjitb/NewRepository.git (push)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ cd ..
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ cd NewRepository/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git remote -v
+origin  https://github.com/ranjitb/NewRepository.git (fetch)
+origin  https://github.com/ranjitb/NewRepository.git (push)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git fetch origin
+From https://github.com/ranjitb/NewRepository
+ * [new branch]      newbranch1 -> origin/newbranch1
+ * [new branch]      newbranch2 -> origin/newbranch2
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/master
+  origin/newbranch1
+  origin/newbranch2
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git remote -v
+origin  https://github.com/ranjitb/NewRepository.git (fetch)
+origin  https://github.com/ranjitb/NewRepository.git (push)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git fetch origin
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git branch branch-1
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git branch newbranch1
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git checkout newbranch1
+Switched to branch 'newbranch1'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch1)
+$ vi new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch1)
+$ vi new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch1)
+$ git commit -am "Changed data in newbranch1"
+[newbranch1 b948df5] Changed data in newbranch1
+ 1 file changed, 7 insertions(+)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git branch newbranch2
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git checkout newbranch2
+Switched to branch 'newbranch2'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch2)
+$ echo "dataathgdhasdghsdgsjh sdhgsahdsagdhgjhggj" >> "welcome"
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch2)
+$ ls li
+ls: cannot access 'li': No such file or directory
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch2)
+$ ls la
+ls: cannot access 'la': No such file or directory
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch2)
+$ ls
+new-file  welcome
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch2)
+$ git add welcome
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch2)
+$ git commit -m "added newfile welcome"
+[newbranch2 cb959ea] added newfile welcome
+ 1 file changed, 1 insertion(+)
+ create mode 100644 welcome
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ vi new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git commit -am "changed in existing filr in master"
+[master effba9b] changed in existing filr in master
+ 1 file changed, 2 insertions(+)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ ls
+new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/master
+  origin/newbranch1
+  origin/newbranch2
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git branch newbranch1
+fatal: A branch named 'newbranch1' already exists.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git checkout newbranch1
+Switched to branch 'newbranch1'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch1)
+$ git push origin newbranch1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 369 bytes | 184.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ranjitb/NewRepository.git
+   61dbfc7..b948df5  newbranch1 -> newbranch1
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch1)
+$ git checkout newbranch2
+Switched to branch 'newbranch2'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch2)
+$ git push origin newbranch2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 347 bytes | 173.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ranjitb/NewRepository.git
+   a8b6c08..cb959ea  newbranch2 -> newbranch2
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 323 bytes | 80.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ranjitb/NewRepository.git
+   fed4c5a..effba9b  master -> master
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ ll
+total 1
+-rw-r--r-- 1 Abridge Solutions 197121 34 Mar  6 10:39 new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ vi new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git commit -am "changed in existing data in master"
+[master 9014528] changed in existing data in master
+ 1 file changed, 1 insertion(+)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ ll
+total 1
+-rw-r--r-- 1 Abridge Solutions 197121 43 Mar  6 10:52 new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 333 bytes | 166.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ranjitb/NewRepository.git
+   effba9b..9014528  master -> master
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git checkout newbranch1
+Switched to branch 'newbranch1'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch1)
+$ git merge master
+Auto-merging new-file
+CONFLICT (content): Merge conflict in new-file
+Automatic merge failed; fix conflicts and then commit the result.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch1|MERGING)
+$ vi new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch1|MERGING)
+$ history
+    1  git --version
+    2  git config --global
+    3  git config --global user.email "blablarahul@gmail.com"
+    4  git config --global user.name "ranjith"
+    5  git clear
+    6  git clean
+    7  git --help
+    8  cat /c/Users/Abridge Solutions/.gitconfig
+    9  cat /c/Users/Abridge Solutions/ .gitconfig
+   10  clear
+   11  cat /c/Users/Abridge Solutions/ .gitconfig
+   12  ls
+   13  cd tr*
+   14  cd training
+   15  mkdir wellsfargo
+   16  cd wellsfargo
+   17  mkdir batch-1
+   18  cd batch-1
+   19  mkdir repo
+   20  ls -la
+   21  git init
+   22  ls -la
+   23  cd repo
+   24  git init
+   25  ls -la
+   26  git --help
+   27  git --help
+   28  git status
+   29  vi .gitignore
+   30  git status
+   31  git add .gitignore
+   32  git status
+   33  git rm --cached
+   34  git status
+   35  git rm --cached .gitignore
+   36  git status
+   37  git add .gitignore
+   38  git status
+   39  git rm --cached .gitignore
+   40  vi .gitignore
+   41  git add .gitignore
+   42  git status
+   43  vi .gitignore
+   44  git status
+   45  git commit -m "adding .gitignore"
+   46  git status
+   47  touch test-report.html
+   48  git status
+   49  touch file1
+   50  git status
+   51  git commit -am "adding file directly from LWD to LR"
+   52  git status
+   53  git commit -am "adding file directly from LWD to LR" "file2.txt"
+   54  git status
+   55  git commit -am "adding file directly from LWD to LR" file2.txt
+   56  git commit -am "adding file directly from LWD to LR" ./file2.txt
+   57  git status
+   58  git commit -am "adding file directly from LWD to LR" ~/file2.txt
+   59  vi .gitignore
+   60  git status
+   61  git checkout .gitignore
+   62  git stash
+   63  git status
+   64  git checkout .gitignore
+   65  vi .gitignore
+   66  git checkout .gitignore
+   67  git status
+   68  git stash
+   69  git checkout -- .gitignore
+   70  git status
+   71  git stash
+   72  vi .gitignore
+   73  git checkout -- .gitignore
+   74  git status
+   75  git status
+   76  git checkout -- .gitignore
+   77  vi .gitignore
+   78  git status
+   79  git stash
+   80  git status
+   81  git log
+   82  git log -p
+   83  q
+   84  git history
+   85  history
+   86  git branch
+   87  git branch localbranch
+   88  git branch local-branch
+   89  git branch
+   90  git log
+   91  git checkout local-branch
+   92  git log
+   93  git add 'newfile'
+   94  git add newfile.text
+   95  touch newfile.txt
+   96  git status
+   97  git checkout master
+   98  git status
+   99  git checkout master
+  100  git status
+  101  touch newfile11.txt
+  102  git status
+  103  git checkout master
+  104  git checkout local-branch
+  105  git status
+  106  git checkout master
+  107  git log
+  108  git status
+  109  git status
+  110  git checkout local-branch
+  111  git status
+  112  ls -la
+  113  git checkout -b new-branch
+  114  ls -la
+  115  ls -la
+  116  git add "fileNew" local-branch
+  117  git add fileNew local-branch
+  118  git add local-branch
+  119  git add newfile local-branch
+  120  git add -a newfile local-branch
+  121  echo >> "new file" test.text
+  122  git status
+  123  echo "test data entered" >> file1.text
+  124  git status
+  125  git checkout master
+  126  echo "test data entered" >> Newfile.text
+  127  git checkout new-branch
+  128  git status
+  129  git branch branch1
+  130  git branch branch2
+  131  vi file1.text
+  132  git commit -am
+  133  git checkout branch1
+  134  vi file1.txt
+  135  git commit -am
+  136  git commit -am file1.txt
+  137  git commit -am "checked"
+  138  git checkout master
+  139  git branch branch2
+  140  git branch branch2
+  141  git branch branch-2
+  142  git checkout branch-2
+  143  git branch newbranch1
+  144  git checkout newbranch1
+  145  ls -l1
+  146  vi file1.txt
+  147  git commit -am "checked new file"
+  148  git commit -am
+  149  git commit -am "checked new file"
+  150  ls -la
+  151  vi .gitignore
+  152  ls -la
+  153  commit -am "1. adding cahnmegs in branch1"
+  154  git commit -am "1. adding cahnmegs in branch1"
+  155  git checkout master
+  156  git branch newbranch2
+  157  git checkout newbranch2
+  158  touch new-file
+  159  git add new-file
+  160  git commit -m "2. adding new file brabch2"
+  161  git checkout master
+  162  vi .gitignore
+  163  git commit -am "2. adding chenge in master"
+  164  history
+  165  git merge newbranch2
+  166  git log
+  167  git checkout newbranch2
+  168  git merge master
+  169  git log
+  170  git checkout master
+  171  git merge newbranch1
+  172  cd .git
+  173  ls -la
+  174  cd..
+  175  cd.
+  176  cd ..
+  177  git commit -am "resolving confilicts"
+  178  cd .git
+  179  ls -la
+  180  cd ..
+  181  cat .gitignore
+  182  git checkout newbranch1
+  183  git merge master
+  184  cat .gitignore
+  185  git branch -d branch-2
+  186  git branch -d new-branch
+  187  ls -la
+  188  git branch -d branch1
+  189  git branch -d branch2
+  190  git branch -d localbranch
+  191  git checkout local-branch
+  192  ls -la
+  193  git checkout newbranch1
+  194  nano .gitignore
+  195  git merge master
+  196  git checkout master
+  197  git merge newbranch1
+  198  git tag
+  199  git tag Ver-1.0
+  200  git tag
+  201  git checkout Ver-1.0
+  202  ls -la
+  203  git status
+  204  git commit -am "tagging demo"
+  205  git log
+  206  echo "tagging demo -" >> new-file
+  207  git log
+  208  git status
+  209  git branch newTagCreatedBranch
+  210  git checkout master
+  211  merge newTagCreatedBranch
+  212  git merge newTagCreatedBranch
+  213  git checkout newTagCreatedBranch
+  214  git merge master
+  215  git checkout newTagCreatedBranch
+  216  git checkout branch
+  217  git checkout master
+  218  git branch -d newTagCreatedBranch
+  219  git checkout local-branch
+  220  git commit -am "cheanges checked"
+  221  git checkout local-branch
+  222  git show
+  223  git history
+  224  history
+  225  history
+  226  clear
+  227  git remote -v
+  228  ~
+  229  git remote -v
+  230  history
+  231  cd cat /c/Users/Abridge Solutions/
+  232  cd tra*
+  233  cd Training/
+  234  ls
+  235  cd wellsfargo/
+  236  git remote -v
+  237  cd batch-1/
+  238  git remote -v
+  239  cd repo/
+  240  git remote -v
+  241  git remote add origin https://github.com/ranjitb/NewRepository.git
+  242  git push origin master
+  243  cd ..
+  244  cd ..ls ll
+  245  ls ll
+  246  ls li
+  247  ls la
+  248  ll
+  249  git clone https://github.com/ranjitb/NewRepository.git
+  250  ll
+  251  cd repo/
+  252  git remove -v
+  253  git remote -v
+  254  git branch
+  255  git branch master
+  256  git checkout master
+  257  git remote -v
+  258  git branch
+  259  git branch -r
+  260  git push origin newbranch1
+  261  git push origin newbranch2
+  262  git remote v
+  263  git remote -v
+  264  git fetch origin
+  265  git branch -r
+  266  git remote -v
+  267*
+  268  cd NewRepository/
+  269  git remote -v
+  270  git fetch origin
+  271  git branch -r
+  272  git remote -v
+  273  git fetch origin
+  274  git branch branch-1
+  275  git branch newbranch1
+  276  git checkout newbranch1
+  277  vi new-file
+  278  vi new-file
+  279  git commit -am "Changed data in newbranch1"
+  280  git checkout master
+  281  git branch newbranch2
+  282  git checkout newbranch2
+  283  echo "dataathgdhasdghsdgsjh sdhgsahdsagdhgjhggj" >> "welcome"
+  284  ls li
+  285  ls la
+  286  ls
+  287  git add welcome
+  288  git commit -m "added newfile welcome"
+  289  git checkout master
+  290  vi new-file
+  291  git commit -am "changed in existing filr in master"
+  292  ls
+  293  git branch -r
+  294  git branch newbranch1
+  295  git checkout newbranch1
+  296  git push origin newbranch1
+  297  git checkout newbranch2
+  298  git push origin newbranch2
+  299  git checkout master
+  300  git push origin master
+  301  ll
+  302  vi new-file
+  303  git commit -am "changed in existing data in master"
+  304  ll
+  305  git push origin master
+  306  git status
+  307  git checkout newbranch1
+  308  git merge master
+  309  vi new-file
+  310  history
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch1|MERGING)
+$ git commit -am "resolving conflits"
+[newbranch1 558940d] resolving conflits
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git fetch origin
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git checkout -b newbranch1 origin/newbranch1
+fatal: A branch named 'newbranch1' already exists.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git checkout newbranch1
+Switched to branch 'newbranch1'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch1)
+$ git merge master
+Already up to date.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (newbranch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git merge newbranch
+merge: newbranch - not something we can merge
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git merge newbranch1
+Updating 9014528..558940d
+Fast-forward
+ new-file | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 378 bytes | 189.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ranjitb/NewRepository.git
+   9014528..558940d  master -> master
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git remote origin
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git remote -v
+origin  https://github.com/ranjitb/NewRepository.git (fetch)
+origin  https://github.com/ranjitb/NewRepository.git (push)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git branch
+  branch-1
+* master
+  newbranch1
+  newbranch2
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git fetch origin
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), done.
+From https://github.com/ranjitb/NewRepository
+   558940d..0b11a36  master     -> origin/master
+ * [new branch]      remote     -> origin/remote
+ * [new tag]         Version1   -> Version1
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ git branch
+  branch-1
+* master
+  newbranch1
+  newbranch2
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ cd..
+bash: cd..: command not found
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/NewRepository (master)
+$ cd ..
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ cd repo/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git push origin Ver1.0
+error: src refspec Ver1.0 does not match any
+error: failed to push some refs to 'https://github.com/ranjitb/NewRepository.git'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git push origin Ver 1.0
+error: src refspec Ver does not match any
+error: src refspec 1.0 does not match any
+error: failed to push some refs to 'https://github.com/ranjitb/NewRepository.git'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git push origin Ver-1.0
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (20/20), 1.83 KiB | 187.00 KiB/s, done.
+Total 20 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/ranjitb/NewRepository.git
+ * [new tag]         Ver-1.0 -> Ver-1.0
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ cd ..
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ git clone https://github.com/Chandan9052/wellsfargotraining.git
+Cloning into 'wellsfargotraining'...
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 27 (delta 8), reused 24 (delta 5), pack-reused 0
+Unpacking objects: 100% (27/27), done.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ cd wellsfargotraining/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ ll
+total 0
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ git branch
+* master
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ echo "restrict branch demo" > demo
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ git push origin master
+Everything up-to-date
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ ll
+total 1
+-rw-r--r-- 1 Abridge Solutions 197121 21 Mar  6 12:44 demo
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ git commit -am "jd"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+        demo
+
+nothing added to commit but untracked files present
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ git push origin master
+Everything up-to-date
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ git add demo
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ git push origin master
+Everything up-to-date
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ git commit -am "jd"
+[master 1a437f4] jd
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 286 bytes | 143.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Chandan9052/wellsfargotraining.git
+   ff5de03..1a437f4  master -> master
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ ll
+total 1
+-rw-r--r-- 1 Abridge Solutions 197121 21 Mar  6 12:44 demo
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ cd..
+bash: cd..: command not found
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ cd ..
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ git branch branchNew
+fatal: not a git repository (or any of the parent directories): .git
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ cd wellsfargotraining/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ git branch branchNew
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (master)
+$ git checkout branchNew
+Switched to branch 'branchNew'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (branchNew)
+$ echo "restrict branch demo" > demo
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (branchNew)
+$ git add demo
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (branchNew)
+$ git push origin master
+Everything up-to-date
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (branchNew)
+$ git commit -am "new branch created"
+On branch branchNew
+nothing to commit, working tree clean
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (branchNew)
+$ ll
+total 1
+-rw-r--r-- 1 Abridge Solutions 197121 21 Mar  6 13:00 demo
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (branchNew)
+$ echo "restrict branch demo" > demo1
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (branchNew)
+$ git add demo1
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (branchNew)
+$ git commit -am "new branch created"
+[branchNew 2b79213] new branch created
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo1
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (branchNew)
+$ git push origin branchNew
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 270 bytes | 135.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'branchNew' on GitHub by visiting:
+remote:      https://github.com/Chandan9052/wellsfargotraining/pull/new/branchNew
+remote:
+To https://github.com/Chandan9052/wellsfargotraining.git
+ * [new branch]      branchNew -> branchNew
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/wellsfargotraining (branchNew)
+$ cd ..
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+fatal: not a git repository (or any of the parent directories): .git
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+fatal: not a git repository (or any of the parent directories): .git
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ cd repo/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git remote -v
+origin  https://github.com/ranjitb/NewRepository.git (fetch)
+origin  https://github.com/ranjitb/NewRepository.git (push)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+fatal: remote origin already exists.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ cd ..
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+fatal: not a git repository (or any of the parent directories): .git
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ ^C
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ cd repo/
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+fatal: remote origin already exists.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git clone https://github.com/ranjitb/GitHubTrainingMaterial.git
+Cloning into 'GitHubTrainingMaterial'...
+warning: You appear to have cloned an empty repository.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ cd ..
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ git clone https://github.com/ranjitb/GitHubTrainingMaterial.git
+Cloning into 'GitHubTrainingMaterial'...
+warning: You appear to have cloned an empty repository.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+fatal: not a git repository (or any of the parent directories): .git
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ git push -u origin master
+fatal: not a git repository (or any of the parent directories): .git
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1
+$ cd GitHubTrainingMaterial/\
+>
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/GitHubTrainingMaterial (master)
+$ git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+fatal: remote origin already exists.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/GitHubTrainingMaterial (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/ranjitb/GitHubTrainingMaterial.git'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/GitHubTrainingMaterial (master)
+$
