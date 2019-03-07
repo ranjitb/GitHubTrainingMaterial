@@ -1,0 +1,1169 @@
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               echiq
+bash: echiq: command not found
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ vi new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git commit -am "changes done"
+On branch master
+Untracked files:
+        new-file
+
+nothing added to commit but untracked files present
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git commit -m "changes done"
+On branch master
+Untracked files:
+        new-file
+
+nothing added to commit but untracked files present
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git commit
+On branch master
+Untracked files:
+        new-file
+
+nothing added to commit but untracked files present
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git add new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git commit -m "changes done"
+[master d495a16] changes done
+ 1 file changed, 12 insertions(+)
+ create mode 100644 new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git log
+commit d495a162250bc326d184f6b75ff60a70aa98b9e6 (HEAD -> master)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:20:38 2019 +0530
+
+    changes done
+
+commit 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:11:41 2019 +0530
+
+    added new file
+
+commit 32962912b60d119ee699653a3e3c3af00a1a7acd
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 14:48:57 2019 +0530
+
+    1. adding cahnmegs in branch1
+
+commit 1924275c3910679d246c4aa219302c8b06b037c2 (local-branch)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 12:36:04 2019 +0530
+
+    adding file directly from LWD to LR
+
+commit c28c5733bdcd09b655c4e80fe6010a1a98d3fa27
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 12:28:50 2019 +0530
+
+    adding .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ ^C
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git revert -n 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|REVERTING)
+$ git continue
+git: 'continue' is not a git command. See 'git --help'.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|REVERTING)
+$ git revert continue
+fatal: bad revision 'continue'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|REVERTING)
+$ git revert -continue
+error: did you mean `--continue` (with two dashes ?)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|REVERTING)
+$ git revert -\-continue
+[master b2b0dd6] Revert "added new file"
+ 1 file changed, 6 insertions(+), 8 deletions(-)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git revert --continue
+error: no cherry-pick or revert in progress
+fatal: revert failed
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git log
+commit b2b0dd677357bc8db65db45bb2d28a6d74d03aa5 (HEAD -> master)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:22:46 2019 +0530
+
+    Revert "added new file"
+
+    This reverts commit 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb.
+
+commit d495a162250bc326d184f6b75ff60a70aa98b9e6
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:20:38 2019 +0530
+
+    changes done
+
+commit 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:11:41 2019 +0530
+
+    added new file
+
+commit 32962912b60d119ee699653a3e3c3af00a1a7acd
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 14:48:57 2019 +0530
+
+    1. adding cahnmegs in branch1
+
+commit 1924275c3910679d246c4aa219302c8b06b037c2 (local-branch)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 12:36:04 2019 +0530
+
+    adding file directly from LWD to LR
+
+commit c28c5733bdcd09b655c4e80fe6010a1a98d3fa27
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 12:28:50 2019 +0530
+
+    adding .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ vi new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git branch stash-branch
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git checkout stash-branch
+Switched to branch 'stash-branch'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (stash-branch)
+$ git stash
+No local changes to save
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (stash-branch)
+$ vi new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (stash-branch)
+$ git stash
+Saved working directory and index state WIP on stash-branch: b2b0dd6 Revert "added new file"
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (stash-branch)
+$ vi new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (stash-branch)
+$ git stash pop
+error: Your local changes to the following files would be overwritten by merge:
+        new-file
+Please commit your changes or stash them before you merge.
+Aborting
+The stash entry is kept in case you need it again.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (stash-branch)
+$ git commit -am "chnegs after stash"
+[stash-branch b1d257c] chnegs after stash
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (stash-branch)
+$ git stash pop
+Auto-merging new-file
+CONFLICT (content): Merge conflict in new-file
+The stash entry is kept in case you need it again.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (stash-branch)
+$ vi new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (stash-branch)
+$ git commit -am "stash demo"
+[stash-branch 69d7f9e] stash demo
+ 1 file changed, 1 insertion(+)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (stash-branch)
+$ git log
+commit 69d7f9ebed3aab7e35646389078b828ffc3e174c (HEAD -> stash-branch)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:31:11 2019 +0530
+
+    stash demo
+
+commit b1d257cf4883ddbdc5753cd0dd29d44f92711389
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:29:43 2019 +0530
+
+    chnegs after stash
+
+commit b2b0dd677357bc8db65db45bb2d28a6d74d03aa5 (master)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:22:46 2019 +0530
+
+    Revert "added new file"
+
+    This reverts commit 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb.
+
+commit d495a162250bc326d184f6b75ff60a70aa98b9e6
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:20:38 2019 +0530
+
+    changes done
+
+commit 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:11:41 2019 +0530
+
+    added new file
+
+commit 32962912b60d119ee699653a3e3c3af00a1a7acd
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 14:48:57 2019 +0530
+
+    1. adding cahnmegs in branch1
+
+commit 1924275c3910679d246c4aa219302c8b06b037c2 (local-branch)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 12:36:04 2019 +0530
+
+    adding file directly from LWD to LR
+
+commit c28c5733bdcd09b655c4e80fe6010a1a98d3fa27
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (stash-branch)
+$ git checkout master
+Switched to branch 'master'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git revert --abort
+error: no cherry-pick or revert in progress
+fatal: revert failed
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ vi new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git commit -am "revert demo"
+[master 88066ba] revert demo
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git log
+commit 88066ba8fc40fd32a68ffbaf5d4a8b3107895829 (HEAD -> master)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:58:07 2019 +0530
+
+    revert demo
+
+commit b2b0dd677357bc8db65db45bb2d28a6d74d03aa5
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:22:46 2019 +0530
+
+    Revert "added new file"
+
+    This reverts commit 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb.
+
+commit d495a162250bc326d184f6b75ff60a70aa98b9e6
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:20:38 2019 +0530
+
+    changes done
+
+commit 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:11:41 2019 +0530
+
+    added new file
+
+commit 32962912b60d119ee699653a3e3c3af00a1a7acd
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 14:48:57 2019 +0530
+
+    1. adding cahnmegs in branch1
+
+commit 1924275c3910679d246c4aa219302c8b06b037c2 (local-branch)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 12:36:04 2019 +0530
+
+    adding file directly from LWD to LR
+
+commit c28c5733bdcd09b655c4e80fe6010a1a98d3fa27
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 12:28:50 2019 +0530
+
+    adding .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ ^C
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git revert -n 88066ba8fc40fd32a68ffbaf5d4a8b3107895829
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|REVERTING)
+$ git revert --continue
+[master e1f990b] Revert "revert demo"
+ 1 file changed, 1 insertion(+), 9 deletions(-)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git revert --abort
+error: no cherry-pick or revert in progress
+fatal: revert failed
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git revert -n 88066ba8fc40fd32a68ffbaf5d4a8b3107895829
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|REVERTING)
+$ git revert --abort
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git log
+commit e1f990b5d41dc9cf1c78c0621ecc4898aa3db344 (HEAD -> master)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 16:00:11 2019 +0530
+
+    Revert "revert demo"
+
+    This reverts commit 88066ba8fc40fd32a68ffbaf5d4a8b3107895829.
+
+commit 88066ba8fc40fd32a68ffbaf5d4a8b3107895829
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:58:07 2019 +0530
+
+    revert demo
+
+commit b2b0dd677357bc8db65db45bb2d28a6d74d03aa5
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:22:46 2019 +0530
+
+    Revert "added new file"
+
+    This reverts commit 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb.
+
+commit d495a162250bc326d184f6b75ff60a70aa98b9e6
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:20:38 2019 +0530
+
+    changes done
+
+commit 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:11:41 2019 +0530
+
+    added new file
+
+commit 32962912b60d119ee699653a3e3c3af00a1a7acd
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 14:48:57 2019 +0530
+
+    1. adding cahnmegs in branch1
+
+commit 1924275c3910679d246c4aa219302c8b06b037c2 (local-branch)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 12:36:04 2019 +0530
+
+    adding file directly from LWD to LR
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git checkout local-branch
+Switched to branch 'local-branch'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ git loh
+git: 'loh' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ git log
+commit 1924275c3910679d246c4aa219302c8b06b037c2 (HEAD -> local-branch)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 12:36:04 2019 +0530
+
+    adding file directly from LWD to LR
+
+commit c28c5733bdcd09b655c4e80fe6010a1a98d3fa27
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 12:28:50 2019 +0530
+
+    adding .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ ^C
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (local-branch)
+$ git checkout master
+Switched to branch 'master'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git cherry-pick 1924275c3910679d246c4aa219302c8b06b037c2
+error: could not apply 1924275... adding file directly from LWD to LR
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ ^C
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git cherry-pick  1924275c3910679d246c4aa219302c8b06b037c1924275c3910679d246c4aa219302c8b06b037c
+fatal: bad revision '1924275c3910679d246c4aa219302c8b06b037c1924275c3910679d246c4aa219302c8b06b037c'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git cherry-pick c28c5733bdcd09b655c4e80fe6010a1a98d3fa27
+error: Cherry-picking is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: cherry-pick failed
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ ll
+total 1
+-rw-r--r-- 1 Abridge Solutions 197121 136 Mar  6 16:27 new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ vi new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git commit -m "dafa"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git merge origin master
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git commit -am "dafa"
+[master 1ca11a7] dafa
+ Date: Tue Mar 5 12:36:04 2019 +0530
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git cherry-pick c28c5733bdcd09b655c4e80fe6010a1a98d3fa27
+error: could not apply c28c573... adding .gitignore
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git merge origin master
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ ll
+total 1
+-rw-r--r-- 1 Abridge Solutions 197121 138 Mar  6 16:30 new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git log
+commit 1ca11a793811bbec326eaa5c09eaa2a756bcb0da (HEAD -> master)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 12:36:04 2019 +0530
+
+    dafa
+
+commit e1f990b5d41dc9cf1c78c0621ecc4898aa3db344
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 16:00:11 2019 +0530
+
+    Revert "revert demo"
+
+    This reverts commit 88066ba8fc40fd32a68ffbaf5d4a8b3107895829.
+
+commit 88066ba8fc40fd32a68ffbaf5d4a8b3107895829
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:58:07 2019 +0530
+
+    revert demo
+
+commit b2b0dd677357bc8db65db45bb2d28a6d74d03aa5
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:22:46 2019 +0530
+
+    Revert "added new file"
+
+    This reverts commit 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb.
+
+commit d495a162250bc326d184f6b75ff60a70aa98b9e6
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:20:38 2019 +0530
+
+    changes done
+
+commit 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:11:41 2019 +0530
+
+    added new file
+
+commit 32962912b60d119ee699653a3e3c3af00a1a7acd
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 14:48:57 2019 +0530
+
+    1. adding cahnmegs in branch1
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git commit -m "commit all changes"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git merge origin master
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git merge origin local-branch
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git checkout local-branch
+error: you need to resolve your current index first
+.gitignore: needs merge
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git commit -m "merge the changes"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       .gitignore
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git merge
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git push origin master
+To https://github.com/ranjitb/NewRepository.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ranjitb/NewRepository.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git push origin local-branch
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'local-branch' on GitHub by visiting:
+remote:      https://github.com/ranjitb/NewRepository/pull/new/local-branch
+remote:
+To https://github.com/ranjitb/NewRepository.git
+ * [new branch]      local-branch -> local-branch
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git fetch master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git fetch origin
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master|CHERRY-PICKING)
+$ git commit -am "dfhgjfag"
+[master b4a23ea] dfhgjfag
+ Date: Tue Mar 5 12:28:50 2019 +0530
+ 1 file changed, 5 insertions(+)
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ ll
+total 1
+-rw-r--r-- 1 Abridge Solutions 197121 138 Mar  6 16:30 new-file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git push origin master
+To https://github.com/ranjitb/NewRepository.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ranjitb/NewRepository.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git push origin local-branch
+Everything up-to-date
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ history
+    1  git --version
+    2  git config --global
+    3  git config --global user.email "blablarahul@gmail.com"
+    4  git config --global user.name "ranjith"
+    5  git clear
+    6  git clean
+    7  git --help
+    8  cat /c/Users/Abridge Solutions/.gitconfig
+    9  cat /c/Users/Abridge Solutions/ .gitconfig
+   10  clear
+   11  cat /c/Users/Abridge Solutions/ .gitconfig
+   12  ls
+   13  cd tr*
+   14  cd training
+   15  mkdir wellsfargo
+   16  cd wellsfargo
+   17  mkdir batch-1
+   18  cd batch-1
+   19  mkdir repo
+   20  ls -la
+   21  git init
+   22  ls -la
+   23  cd repo
+   24  git init
+   25  ls -la
+   26  git --help
+   27  git --help
+   28  git status
+   29  vi .gitignore
+   30  git status
+   31  git add .gitignore
+   32  git status
+   33  git rm --cached
+   34  git status
+   35  git rm --cached .gitignore
+   36  git status
+   37  git add .gitignore
+   38  git status
+   39  git rm --cached .gitignore
+   40  vi .gitignore
+   41  git add .gitignore
+   42  git status
+   43  vi .gitignore
+   44  git status
+   45  git commit -m "adding .gitignore"
+   46  git status
+   47  touch test-report.html
+   48  git status
+   49  touch file1
+   50  git status
+   51  git commit -am "adding file directly from LWD to LR"
+   52  git status
+   53  git commit -am "adding file directly from LWD to LR" "file2.txt"
+   54  git status
+   55  git commit -am "adding file directly from LWD to LR" file2.txt
+   56  git commit -am "adding file directly from LWD to LR" ./file2.txt
+   57  git status
+   58  git commit -am "adding file directly from LWD to LR" ~/file2.txt
+   59  vi .gitignore
+   60  git status
+   61  git checkout .gitignore
+   62  git stash
+   63  git status
+   64  git checkout .gitignore
+   65  vi .gitignore
+   66  git checkout .gitignore
+   67  git status
+   68  git stash
+   69  git checkout -- .gitignore
+   70  git status
+   71  git stash
+   72  vi .gitignore
+   73  git checkout -- .gitignore
+   74  git status
+   75  git status
+   76  git checkout -- .gitignore
+   77  vi .gitignore
+   78  git status
+   79  git stash
+   80  git status
+   81  git log
+   82  git log -p
+   83  q
+   84  git history
+   85  history
+   86  git branch
+   87  git branch localbranch
+   88  git branch local-branch
+   89  git branch
+   90  git log
+   91  git checkout local-branch
+   92  git log
+   93  git add 'newfile'
+   94  git add newfile.text
+   95  touch newfile.txt
+   96  git status
+   97  git checkout master
+   98  git status
+   99  git checkout master
+  100  git status
+  101  touch newfile11.txt
+  102  git status
+  103  git checkout master
+  104  git checkout local-branch
+  105  git status
+  106  git checkout master
+  107  git log
+  108  git status
+  109  git status
+  110  git checkout local-branch
+  111  git status
+  112  ls -la
+  113  git checkout -b new-branch
+  114  ls -la
+  115  ls -la
+  116  git add "fileNew" local-branch
+  117  git add fileNew local-branch
+  118  git add local-branch
+  119  git add newfile local-branch
+  120  git add -a newfile local-branch
+  121  echo >> "new file" test.text
+  122  git status
+  123  echo "test data entered" >> file1.text
+  124  git status
+  125  git checkout master
+  126  echo "test data entered" >> Newfile.text
+  127  git checkout new-branch
+  128  git status
+  129  git branch branch1
+  130  git branch branch2
+  131  vi file1.text
+  132  git commit -am
+  133  git checkout branch1
+  134  vi file1.txt
+  135  git commit -am
+  136  git commit -am file1.txt
+  137  git commit -am "checked"
+  138  git checkout master
+  139  git branch branch2
+  140  git branch branch2
+  141  git branch branch-2
+  142  git checkout branch-2
+  143  git branch newbranch1
+  144  git checkout newbranch1
+  145  ls -l1
+  146  vi file1.txt
+  147  git commit -am "checked new file"
+  148  git commit -am
+  149  git commit -am "checked new file"
+  150  ls -la
+  151  vi .gitignore
+  152  ls -la
+  153  commit -am "1. adding cahnmegs in branch1"
+  154  git commit -am "1. adding cahnmegs in branch1"
+  155  git checkout master
+  156  git branch newbranch2
+  157  git checkout newbranch2
+  158  touch new-file
+  159  git add new-file
+  160  git commit -m "2. adding new file brabch2"
+  161  git checkout master
+  162  vi .gitignore
+  163  git commit -am "2. adding chenge in master"
+  164  history
+  165  git merge newbranch2
+  166  git log
+  167  git checkout newbranch2
+  168  git merge master
+  169  git log
+  170  git checkout master
+  171  git merge newbranch1
+  172  cd .git
+  173  ls -la
+  174  cd..
+  175  cd.
+  176  cd ..
+  177  git commit -am "resolving confilicts"
+  178  cd .git
+  179  ls -la
+  180  cd ..
+  181  cat .gitignore
+  182  git checkout newbranch1
+  183  git merge master
+  184  cat .gitignore
+  185  git branch -d branch-2
+  186  git branch -d new-branch
+  187  ls -la
+  188  git branch -d branch1
+  189  git branch -d branch2
+  190  git branch -d localbranch
+  191  git checkout local-branch
+  192  ls -la
+  193  git checkout newbranch1
+  194  nano .gitignore
+  195  git merge master
+  196  git checkout master
+  197  git merge newbranch1
+  198  git tag
+  199  git tag Ver-1.0
+  200  git tag
+  201  git checkout Ver-1.0
+  202  ls -la
+  203  git status
+  204  git commit -am "tagging demo"
+  205  git log
+  206  echo "tagging demo -" >> new-file
+  207  git log
+  208  git status
+  209  git branch newTagCreatedBranch
+  210  git checkout master
+  211  merge newTagCreatedBranch
+  212  git merge newTagCreatedBranch
+  213  git checkout newTagCreatedBranch
+  214  git merge master
+  215  git checkout newTagCreatedBranch
+  216  git checkout branch
+  217  git checkout master
+  218  git branch -d newTagCreatedBranch
+  219  git checkout local-branch
+  220  git commit -am "cheanges checked"
+  221  git checkout local-branch
+  222  git show
+  223  git history
+  224  history
+  225  history
+  226  clear
+  227  git remote -v
+  228  ~
+  229  git remote -v
+  230  history
+  231  cd cat /c/Users/Abridge Solutions/
+  232  cd tra*
+  233  cd Training/
+  234  ls
+  235  cd wellsfargo/
+  236  git remote -v
+  237  cd batch-1/
+  238  git remote -v
+  239  cd repo/
+  240  git remote -v
+  241  git remote add origin https://github.com/ranjitb/NewRepository.git
+  242  git push origin master
+  243  cd ..
+  244  cd ..ls ll
+  245  ls ll
+  246  ls li
+  247  ls la
+  248  ll
+  249  git clone https://github.com/ranjitb/NewRepository.git
+  250  ll
+  251  cd repo/
+  252  git remove -v
+  253  git remote -v
+  254  git branch
+  255  git branch master
+  256  git checkout master
+  257  git remote -v
+  258  git branch
+  259  git branch -r
+  260  git push origin newbranch1
+  261  git push origin newbranch2
+  262  git remote v
+  263  git remote -v
+  264  git fetch origin
+  265  git branch -r
+  266  git remote -v
+  267*
+  268  cd NewRepository/
+  269  git remote -v
+  270  git fetch origin
+  271  git branch -r
+  272  git remote -v
+  273  git fetch origin
+  274  git branch branch-1
+  275  git branch newbranch1
+  276  git checkout newbranch1
+  277  vi new-file
+  278  vi new-file
+  279  git commit -am "Changed data in newbranch1"
+  280  git checkout master
+  281  git branch newbranch2
+  282  git checkout newbranch2
+  283  echo "dataathgdhasdghsdgsjh sdhgsahdsagdhgjhggj" >> "welcome"
+  284  ls li
+  285  ls la
+  286  ls
+  287  git add welcome
+  288  git commit -m "added newfile welcome"
+  289  git checkout master
+  290  vi new-file
+  291  git commit -am "changed in existing filr in master"
+  292  ls
+  293  git branch -r
+  294  git branch newbranch1
+  295  git checkout newbranch1
+  296  git push origin newbranch1
+  297  git checkout newbranch2
+  298  git push origin newbranch2
+  299  git checkout master
+  300  git push origin master
+  301  ll
+  302  vi new-file
+  303  git commit -am "changed in existing data in master"
+  304  ll
+  305  git push origin master
+  306  git status
+  307  git checkout newbranch1
+  308  git merge master
+  309  vi new-file
+  310  history
+  311  git commit -am "resolving conflits"
+  312  git checkout master
+  313  git fetch origin
+  314  git checkout -b newbranch1 origin/newbranch1
+  315  git checkout newbranch1
+  316  git merge master
+  317  git checkout master
+  318  git merge newbranch
+  319  git merge newbranch1
+  320  git push origin master
+  321  git remote origin
+  322  git remote -v
+  323  git branch
+  324  git fetch origin
+  325  git branch
+  326  cd..
+  327  cd ..
+  328  cd repo/
+  329  git push origin Ver1.0
+  330  git push origin Ver 1.0
+  331  git push origin Ver-1.0
+  332  cd ..
+  333  git clone https://github.com/Chandan9052/wellsfargotraining.git
+  334  cd wellsfargotraining/
+  335  ll
+  336  git branch
+  337  echo "restrict branch demo" > demo
+  338  git push origin master
+  339  ll
+  340  git commit -am "jd"
+  341  git push origin master
+  342  git add demo
+  343  git push origin master
+  344  git commit -am "jd"
+  345  git push origin master
+  346  ll
+  347  cd..
+  348  cd ..
+  349  git branch branchNew
+  350  cd wellsfargotraining/
+  351  git branch branchNew
+  352  git checkout branchNew
+  353  echo "restrict branch demo" > demo
+  354  git add demo
+  355  git push origin master
+  356  git commit -am "new branch created"
+  357  ll
+  358  echo "restrict branch demo" > demo1
+  359  git add demo1
+  360  git commit -am "new branch created"
+  361  git push origin branchNew
+  362  cd ..
+  363  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  364  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  365  git remote -v
+  366  cd repo/
+  367  git remote -v
+  368  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  369  cd ..
+  370  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  371  cd repo/
+  372  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  373  git clone https://github.com/ranjitb/GitHubTrainingMaterial.git
+  374  cd ..
+  375  git clone https://github.com/ranjitb/GitHubTrainingMaterial.git
+  376  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  377  git push -u origin master
+  378*
+  379  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  380  git push -u origin master
+  381  history
+  382  cd ..
+  383  cd repo/
+  384  clean
+  385  clear
+  386  git log
+  387  echo "hello" > 'newfileNew.txt'
+  388  ll
+  389  git add newfileNew.txt
+  390  git commit -am "added new file"
+  391  rm newfileNew.txt
+  392  git status
+  393  git log
+  394  git push origin master
+  395  git fetch origin
+  396  git push origin master
+  397  git log
+  398  git reset 32962912b60d119ee699653a3e3c3af00a1a7acd
+  399  git log
+  400  git status
+  401  git push origin
+  402*
+  403  git commit -am "added new file"
+  404  git push origin master
+  405  clear
+  406                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                echiq
+  407  vi new-file
+  408  git commit -am "changes done"
+  409  git commit -m "changes done"
+  410  git commit
+  411  git add new-file
+  412  git commit -m "changes done"
+  413  git status
+  414  git log
+  415*
+  416  git continue
+  417  git revert continue
+  418  git revert -continue
+  419  git revert -\-continue
+  420  git revert --continue
+  421  git log
+  422  vi new-file
+  423  git branch stash-branch
+  424  git checkout stash-branch
+  425  git stash
+  426*
+  427  git stash
+  428  vi new-file
+  429  git stash pop
+  430  git commit -am "chnegs after stash"
+  431  git stash pop
+  432  vi new-file
+  433  git commit -am "stash demo"
+  434  git log
+  435  git checkout master
+  436  git revert --abort
+  437  vi new-file
+  438  git commit -am "revert demo"
+  439  git status
+  440  git log
+  441  git revert -n 88066ba8fc40fd32a68ffbaf5d4a8b3107895829
+  442  git revert --continue
+  443  git revert --abort
+  444  git revert -n 88066ba8fc40fd32a68ffbaf5d4a8b3107895829
+  445  git revert --abort
+  446  git log
+  447  git checkout local-branch
+  448  git loh
+  449  git log
+  450  git checkout master
+  451  git cherry-pick 1924275c3910679d246c4aa219302c8b06b037c2
+  452  git cherry-pick  1924275c3910679d246c4aa219302c8b06b037c1924275c3910679d246c4aa219302c8b06b037c
+  453  git cherry-pick c28c5733bdcd09b655c4e80fe6010a1a98d3fa27
+  454  ll
+  455  vi new-file
+  456  git commit -m "dafa"
+  457  git merge origin master
+  458  git commit -am "dafa"
+  459  git cherry-pick c28c5733bdcd09b655c4e80fe6010a1a98d3fa27
+  460  git merge origin master
+  461  ll
+  462  git log
+  463  git commit -m "commit all changes"
+  464  git merge origin master
+  465  git merge origin local-branch
+  466  git checkout local-branch
+  467  git commit -m "merge the changes"
+  468  git merge
+  469  git push origin
+  470  git push origin master
+  471  git push origin local-branch
+  472  git fetch master
+  473  git fetch origin
+  474  git commit -am "dfhgjfag"
+  475  ll
+  476  git push origin master
+  477  git push origin local-branch
+  478  history
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$ git log
+commit b4a23eac3f8de8f7640d5c959ab037bb76b86908 (HEAD -> master)
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 12:28:50 2019 +0530
+
+    dfhgjfag
+
+commit 1ca11a793811bbec326eaa5c09eaa2a756bcb0da
+Author: ranjith <blablarahul@gmail.com>
+Date:   Tue Mar 5 12:36:04 2019 +0530
+
+    dafa
+
+commit e1f990b5d41dc9cf1c78c0621ecc4898aa3db344
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 16:00:11 2019 +0530
+
+    Revert "revert demo"
+
+    This reverts commit 88066ba8fc40fd32a68ffbaf5d4a8b3107895829.
+
+commit 88066ba8fc40fd32a68ffbaf5d4a8b3107895829
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:58:07 2019 +0530
+
+    revert demo
+
+commit b2b0dd677357bc8db65db45bb2d28a6d74d03aa5
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:22:46 2019 +0530
+
+    Revert "added new file"
+
+    This reverts commit 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb.
+
+commit d495a162250bc326d184f6b75ff60a70aa98b9e6
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:20:38 2019 +0530
+
+    changes done
+
+commit 5f3b7f14eb5a298940a4e19dc5f9d2e2f689a0cb
+Author: ranjith <blablarahul@gmail.com>
+Date:   Wed Mar 6 15:11:41 2019 +0530
+
+    added new file
+
+Abridge Solutions@DESKTOP-MLV8CSH MINGW64 ~/Training/wellsfargo/batch-1/repo (master)
+$

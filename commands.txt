@@ -1,0 +1,502 @@
+ 135  git commit -am
+  136  git commit -am file1.txt
+  137  git commit -am "checked"
+  138  git checkout master
+  139  git branch branch2
+  140  git branch branch2
+  141  git branch branch-2
+  142  git checkout branch-2
+  143  git branch newbranch1
+  144  git checkout newbranch1
+  145  ls -l1
+  146  vi file1.txt
+  147  git commit -am "checked new file"
+  148  git commit -am
+  149  git commit -am "checked new file"
+  150  ls -la
+  151  vi .gitignore
+  152  ls -la
+  153  commit -am "1. adding cahnmegs in branch1"
+  154  git commit -am "1. adding cahnmegs in branch1"
+  155  git checkout master
+  156  git branch newbranch2
+  157  git checkout newbranch2
+  158  touch new-file
+  159  git add new-file
+  160  git commit -m "2. adding new file brabch2"
+  161  git checkout master
+  162  vi .gitignore
+  163  git commit -am "2. adding chenge in master"
+  164  history
+  165  git merge newbranch2
+  166  git log
+  167  git checkout newbranch2
+  168  git merge master
+  169  git log
+  170  git checkout master
+  171  git merge newbranch1
+  172  cd .git
+  173  ls -la
+  174  cd..
+  175  cd.
+  176  cd ..
+  177  git commit -am "resolving confilicts"
+  178  cd .git
+  179  ls -la
+  180  cd ..
+  181  cat .gitignore
+  182  git checkout newbranch1
+  183  git merge master
+  184  cat .gitignore
+  185  git branch -d branch-2
+  186  git branch -d new-branch
+  187  ls -la
+  188  git branch -d branch1
+  189  git branch -d branch2
+  190  git branch -d localbranch
+  191  git checkout local-branch
+  192  ls -la
+  193  git checkout newbranch1
+  194  nano .gitignore
+  195  git merge master
+  196  git checkout master
+  197  git merge newbranch1
+  198  git tag
+  199  git tag Ver-1.0
+  200  git tag
+  201  git checkout Ver-1.0
+  202  ls -la
+  203  git status
+  204  git commit -am "tagging demo"
+  205  git log
+  206  echo "tagging demo -" >> new-file
+  207  git log
+  208  git status
+  209  git branch newTagCreatedBranch
+  210  git checkout master
+  211  merge newTagCreatedBranch
+  212  git merge newTagCreatedBranch
+  213  git checkout newTagCreatedBranch
+  214  git merge master
+  215  git checkout newTagCreatedBranch
+  216  git checkout branch
+  217  git checkout master
+  218  git branch -d newTagCreatedBranch
+  219  git checkout local-branch
+  220  git commit -am "cheanges checked"
+  221  git checkout local-branch
+  222  git show
+  223  git history
+  224  history
+  225  history
+  226  clear
+  227  git remote -v
+  228  ~
+  229  git remote -v
+  230  history
+  231  cd cat /c/Users/Abridge Solutions/
+  232  cd tra*
+  233  cd Training/
+  234  ls
+  235  cd wellsfargo/
+  236  git remote -v
+  237  cd batch-1/
+  238  git remote -v
+  239  cd repo/
+  240  git remote -v
+  241  git remote add origin https://github.com/ranjitb/NewRepository.git
+  242  git push origin master
+  243  cd ..
+  244  cd ..ls ll
+  245  ls ll
+  246  ls li
+  247  ls la
+  248  ll
+  249  git clone https://github.com/ranjitb/NewRepository.git
+  250  ll
+  251  cd repo/
+  252  git remove -v
+  253  git remote -v
+  254  git branch
+  255  git branch master
+  256  git checkout master
+  257  git remote -v
+  258  git branch
+  259  git branch -r
+  260  git push origin newbranch1
+  261  git push origin newbranch2
+  262  git remote v
+  263  git remote -v
+  264  git fetch origin
+  265  git branch -r
+  266  git remote -v
+  267  cd NewRepository/
+  268  git remote -v
+  269  git fetch origin
+  270  git branch -r
+  271  git remote -v
+  272  git fetch origin
+  273  git branch branch-1
+  274  git branch newbranch1
+  275  git checkout newbranch1
+  276  vi new-file
+  277  vi new-file
+  278  git commit -am "Changed data in newbranch1"
+  279  git checkout master
+  280  git branch newbranch2
+  281  git checkout newbranch2
+  282  echo "dataathgdhasdghsdgsjh sdhgsahdsagdhgjhggj" >> "welcome"
+  283  ls li
+  284  ls la
+  285  ls
+  286  git add welcome
+  287  git commit -m "added newfile welcome"
+  288  git checkout master
+  289  vi new-file
+  290  git commit -am "changed in existing filr in master"
+  291  ls
+  292  git branch -r
+  293  git branch newbranch1
+  294  git checkout newbranch1
+  295  git push origin newbranch1
+  296  git checkout newbranch2
+  297  git push origin newbranch2
+  298  git checkout master
+  299  git push origin master
+  300  ll
+  301  vi new-file
+  302  git commit -am "changed in existing data in master"
+  303  ll
+  304  git push origin master
+  305  git status
+  306  git checkout newbranch1
+  307  git merge master
+  308  vi new-file
+  309  history
+  310  git commit -am "resolving conflits"
+  311  git checkout master
+  312  git fetch origin
+  313  git checkout -b newbranch1 origin/newbranch1
+  314  git checkout newbranch1
+  315  git merge master
+  316  git checkout master
+  317  git merge newbranch
+  318  git merge newbranch1
+  319  git push origin master
+  320  git remote origin
+  321  git remote -v
+  322  git branch
+  323  git fetch origin
+  324  git branch
+  325  cd..
+  326  cd ..
+  327  cd repo/
+  328  git push origin Ver1.0
+  329  git push origin Ver 1.0
+  330  git push origin Ver-1.0
+  331  cd ..
+  332  git clone https://github.com/Chandan9052/wellsfargotraining.git
+  333  cd wellsfargotraining/
+  334  ll
+  335  git branch
+  336  echo "restrict branch demo" > demo
+  337  git push origin master
+  338  ll
+  339  git commit -am "jd"
+  340  git push origin master
+  341  git add demo
+  342  git push origin master
+  343  git commit -am "jd"
+  344  git push origin master
+  345  ll
+  346  cd..
+  347  cd ..
+  348  git branch branchNew
+  349  cd wellsfargotraining/
+  350  git branch branchNew
+  351  git checkout branchNew
+  352  echo "restrict branch demo" > demo
+  353  git add demo
+  354  git push origin master
+  355  git commit -am "new branch created"
+  356  ll
+  357  echo "restrict branch demo" > demo1
+  358  git add demo1
+  359  git commit -am "new branch created"
+  360  git push origin branchNew
+  361  cd ..
+  362  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  363  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  364  git remote -v
+  365  cd repo/
+  366  git remote -v
+  367  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  368  cd ..
+  369  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  370  cd repo/
+  371  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  372  git clone https://github.com/ranjitb/GitHubTrainingMaterial.git
+  373  cd ..
+  374  git clone https://github.com/ranjitb/GitHubTrainingMaterial.git
+  375  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  376  git push -u origin master
+  377  git remote add origin https://github.com/ranjitb/GitHubTrainingMaterial.git
+  378  git push -u origin master
+  379  history
+  380  cd ..
+  381  cd repo/
+  382  clean
+  383  clear
+  384  git log
+  385  echo "hello" > 'newfileNew.txt'
+  386  ll
+  387  git add newfileNew.txt
+  388  git commit -am "added new file"
+  389  rm newfileNew.txt
+  390  git status
+  391  git log
+  392  git push origin master
+  393  git fetch origin
+  394  git push origin master
+  395  git log
+  396  git reset 32962912b60d119ee699653a3e3c3af00a1a7acd
+  397  git log
+  398  git status
+  399  git push origin
+  400  git commit -am "added new file"
+  401  git push origin master
+  402  clear
+  403                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                echiq
+  404  vi new-file
+  405  git commit -am "changes done"
+  406  git commit -m "changes done"
+  407  git commit
+  408  git add new-file
+  409  git commit -m "changes done"
+  410  git status
+  411  git log
+  412  git continue
+  413  git revert continue
+  414  git revert -continue
+  415  git revert -\-continue
+  416  git revert --continue
+  417  git log
+  418  vi new-file
+  419  git branch stash-branch
+  420  git checkout stash-branch
+  421  git stash
+  422  git stash
+  423  vi new-file
+  424  git stash pop
+  425  git commit -am "chnegs after stash"
+  426  git stash pop
+  427  vi new-file
+  428  git commit -am "stash demo"
+  429  git log
+  430  git checkout master
+  431  git revert --abort
+  432  vi new-file
+  433  git commit -am "revert demo"
+  434  git status
+  435  git log
+  436  git revert -n 88066ba8fc40fd32a68ffbaf5d4a8b3107895829
+  437  git revert --continue
+  438  git revert --abort
+  439  git revert -n 88066ba8fc40fd32a68ffbaf5d4a8b3107895829
+  440  git revert --abort
+  441  git log
+  442  git checkout local-branch
+  443  git loh
+  444  git log
+  445  git checkout master
+  446  git cherry-pick 1924275c3910679d246c4aa219302c8b06b037c2
+  447  git cherry-pick  1924275c3910679d246c4aa219302c8b06b037c1924275c3910679d246c4aa219302c8b06b037c
+  448  git cherry-pick c28c5733bdcd09b655c4e80fe6010a1a98d3fa27
+  449  ll
+  450  vi new-file
+  451  git commit -m "dafa"
+  452  git merge origin master
+  453  git commit -am "dafa"
+  454  git cherry-pick c28c5733bdcd09b655c4e80fe6010a1a98d3fa27
+  455  git merge origin master
+  456  ll
+  457  git log
+  458  git commit -m "commit all changes"
+  459  git merge origin master
+  460  git merge origin local-branch
+  461  git checkout local-branch
+  462  git commit -m "merge the changes"
+  463  git merge
+  464  git push origin
+  465  git push origin master
+  466  git push origin local-branch
+  467  git fetch master
+  468  git fetch origin
+  469  git commit -am "dfhgjfag"
+  470  ll
+  471  git push origin master
+  472  git push origin local-branch
+  473  history
+  474  git log
+  475  cd Training/
+  476  cd wellsfargo/
+  477  cd batch-1/
+  478  cd repo/
+  479  clear
+  480  echo "Creating new file" file.txt
+  481  git commit -am "New file added file.txt"
+  482  git add file.txt
+  483  git status
+  484  ll
+  485  echo "Creating new file" > "file.txt"
+  486  ll
+  487  git commit -am "New file added file.txt"
+  488  git add file.txt
+  489  git commit -am "New file added file.txt"
+  490  ll
+  491  git checkout newbranch1
+  492  ll
+  493  echo "Creating new file in newbranch1" > "file.txt"
+  494  git add file.txt
+  495  git commit -am "New file added file.txt to newbranch1"
+  496  ll
+  497  git merge master
+  498  vi new-file
+  499  vi file.txt
+  500  vi .gitignore
+  501  vi new-file
+  502  git commit -am "Conflicts are resolved"
+  503  git checkout master
+  504  git merge newbranch1
+  505  git checkout -b rebase-demo
+  506  echo "rebase demo -1" >> demo/new-file
+  507  mkdir demo
+  508  echo "rebase demo -1" >> demo/new-file
+  509  git commit -am "rebase demo -1"
+  510  git add demo/
+  511  git commit -am "rebase demo -1"
+  512  git checkout master
+  513  mkdir demo
+  514  git add demo/
+  515  git commit -am "add folder"
+  516  echo "rebase demo -2" >> demo/new-file
+  517  git checkout rebase-demo
+  518  git commit -am "added new file"
+  519  git add demo/
+  520  git commit -am "added new file"
+  521  git checkout rebase-demo
+  522  echo "rebase demo -3" >> demo/new-file.txt
+  523  git commit -am "added new file"
+  524  git add demo/newfile.txt
+  525  git commit -am "added new file"
+  526  git add demo\newfile.txt
+  527  git add demo/newfile.txt
+  528  git checkout master
+  529  git merge rebase-demo
+  530  git log
+  531  git rebase master
+  532  vi demo/new-file
+  533  vi demo/new-file.txt
+  534  git commit -am "committed chahnges"
+  535  echo "rebase demo -2" >> demo/new-file
+  536  vi demo/new-file
+  537  git checkout rebase-demo
+  538  git commit -am "committed changes 2"
+  539  git checkout rebase-demo
+  540  echo "rebase demo -4" >> demo/new-file
+  541  git commit -am "committed changes 4"
+  542  git rebase master
+  543  vi demo\new-file
+  544  vi demo\new-file1.txt
+  545  vi demo\new-file.txt
+  546  vi demo\new-file
+  547  git commit -am "committed changes 5"
+  548  git log
+  549  git merge master
+  550  git merge rebase-demo
+  551  vi demo/new-file
+  552  git commit -am "committed changes 6"
+  553  vi demo/new-file
+  554  git rebase --continue
+  555  git commit -am "committed changes 6"
+  556  git rebase --abort
+  557  git commit -am "committed changes 6"
+  558  git add demo/new-fiel.txt
+  559*
+  560  git commit -am "committed changes 6"
+  561  git add demo/new-file.txt
+  562  git commit -am "committed changes 6"
+  563  git checkout master
+  564  echo "ammend demo -1 " >> ammenddemo
+  565  git add amend-demo
+  566  git commit -am "ad-2"
+  567  git add amenddemo
+  568  git add ammenddemo
+  569  git commit -m "ad-2"
+  570  git log
+  571  git rebase -i HEAD-2
+  572  git log
+  573  git rebase -i HEAD-2
+  574  git rebase -i HEAD~2
+  575  git log
+  576  git rebase --continue
+  577  git commit --amend
+  578  git log
+  579  git rebase --continue
+  580  git commit --amend
+  581  git rebase --continue
+  582  git log
+  583  ssh-keygen.exe
+  584  ssh-keygen.exe
+  585  git remote set-url origin https://github.com/ranjitb/NewRepository.git
+  586  git remote -v
+  587  git remote set-url origin git@github.com/ranjitb/NewRepository.git
+  588  git remote -v
+  589  git remote set-url origin git@github.com:ranjitb/NewRepository.git
+  590  git remote -v
+  591  git push origin master
+  592  git remote set-url origin git@github.com/ranjitb/NewRepository.git
+  593  git remote set-url origin https://github.com/ranjitb/NewRepository.git
+  594  git push origin master
+  595  git remote -v
+  596  git remote set-url origin git@github.com:ranjitb/NewRepository.git
+  597  git push origin master
+  598  git remote -v
+  599  git remote set-url origin https://github.com/ranjitb/NewRepository.git
+  600* git push orig
+  601  git checkout newbrach1
+  602  git checkout newbranch1
+  603  git remote set-url origin git@github.com:ranjitb/NewRepository.git
+  604  git remote -v
+  605  git push origin master
+  606  git remote set-url origin https://github.com/ranjitb/NewRepository.git
+  607  git push origin master
+  608  git pull origin master
+  609  vi new-file
+  610  git commit -m "adfjgaj
+"
+  611  git commit -m "welcome"
+  612  vi new-file
+  613  git commit -am "welcome"
+  614  git pull origin master
+  615  git push origin master
+  616  git push origin newbranch1
+  617  git push origin master
+  618  git merge origin master
+  619  git merge master
+  620  git push origin master
+  621  git checkout master
+  622  git push origin master
+  623  git pull origin master
+  624  vi new-file
+  625* elcome"
+  626  git push origin master
+  627  git push origin master
+  628  git diff newbranch1 newbranch2
+  629  git diff new-file new-file.txt
+  630  git diff new-file file.txt
+  631  git diff "new-file" "file.txt"
+  632  git diff 'abc' 'abd'
+  633  vi new-file
+  634  history
+
